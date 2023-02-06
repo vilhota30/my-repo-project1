@@ -1,0 +1,112 @@
+
+.footer-info__element {
+
+   @include transitive (color);
+   font-family: 'Roboto';
+   color: rgba(255, 255, 255, 0.6);
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: calc(24/14);
+   letter-spacing: 0.03em;
+   text-decoration: none;
+
+   // transition-property: color;
+   // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+ }
+
+ .footer-info__element--white {
+  &:hover,
+  &:focus {
+    color: var(--button-color);
+    }
+ }
+
+ .footer-info {
+ background-color: var(--footerbg-color);
+ }
+
+.footer-info__contacts {
+   margin-bottom: 9px;
+ }
+
+ .footer-info__contacts:last-child {
+    margin-bottom: 0px;
+ }
+ 
+
+ .logo-footer {
+    color: var(--button-color);
+} 
+
+ .jointoday {
+   display: inline-block;
+   align-items: center;
+   flex-direction: column;
+   @media screen and (min-width: 768px) {
+      display: flex;
+      align-items: flex-start;
+   }
+   @media screen and (min-width: 481px) {
+      display: flex;
+      justify-content: center;
+   }
+
+ }
+
+
+ .section-number__jointoday-title {
+    margin-bottom: 20px;
+    color: #FFFFFF;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+   
+    @media screen and (min-width: 768px) {
+      align-self: center;
+    }
+    @media screen and (min-width: 1200px) {
+      align-self: flex-start;
+    }
+    
+ }
+
+ .socialsgroup {
+   
+   display: flex;
+   justify-content: center;
+    text-align: center;
+    gap: 10px;
+ }
+
+.socialsgroup__connect-link {
+
+   @include transitive (color, background-color);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 44px;
+   height: 44px;
+   border-radius: 50px;
+   fill: var(--button-color);
+   background-color: #3b3c49;
+
+   outline: 2px solid transparent;
+   outline-offset: -2px;
+   // transition-property: color, background-color;
+   // transition-duration: 250ms;
+   // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+ }
+
+ .socialsgroup__connect-link--blue {
+    &:hover,
+    &:focus {
+   fill: var(--button-color);
+   background-color: var(--accent-color);
+   }
+ }

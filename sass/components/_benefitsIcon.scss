@@ -1,0 +1,219 @@
+.container-benefits {
+    @extend .container;
+    min-width: 480px;
+}
+
+.benefits-section {
+    @extend %section;
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}
+
+.benefits-line__description {
+    align-content: flex-start;
+    align-self: baseline;
+    width: 450px;
+    @media screen and (min-width: 768px) {
+       width: 354px;
+       height: 48px;
+    }
+    @media screen and (min-width: 1200px) {
+       width: 270px;
+       height: 72px;
+    }
+}
+.benefits-line__line {
+
+    @media screen and (max-width: 767px) {
+        text-align: center;
+    }
+   align-self: baseline;
+    color: var(--logofirst-color);
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+
+.benefits-line__text-line {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24/14);
+    letter-spacing: 0.03em;
+}
+
+.benefits-section__title {
+    content-visibility: hidden;
+}
+
+.container-benefits .benefits-line {
+     display: block;
+    list-style: none;
+    color: var(--ptext-color);
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+    }
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-self: flex-end;
+
+    }
+
+}
+
+
+.benefits-line__text-nodestart,
+.benefits-line__text-nodecenter,
+.benefits-line__text-nodemiddle,
+.benefits-line__text-nodefinish {
+    align-items: center;
+     @media screen and (max-width: 767px) {
+        &:not(:last-child) {
+        margin-bottom: 30px;
+        }
+        width: 450px;
+        height: 226px;
+        display: block;
+    }
+    @media screen and (min-width: 768px) {
+       display: block;
+       width: 354px;
+       height: 224px;
+       width: calc((100% - 4 * 15px) / 2);
+       margin: 15px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+        height: 248px;
+    .benefits-line__text-nodestart,
+    .benefits-line__text-nodecenter,
+    .benefits-line__text-nodemiddle,
+    .benefits-line__text-nodefinish:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    }
+}
+   
+// .text-size {
+//     margin-right: 30px;
+// }
+
+.benefits-line__text-nodestart {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.benefits-line__text-nodestart::before {
+    content: "";
+    width: 450px;
+    height: 120px;
+    @media screen and (min-width: 768px) {
+        width: 354px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+    }
+    background-size: auto;
+    background-image: url(../images/icons/antena.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #F5F4FA;
+    margin-bottom: 30px;
+}
+.benefits-line__text-nodecenter::before {
+    content: "";
+    width: 450px;
+    height: 120px;
+    @media screen and (min-width: 768px) {
+        width: 354px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+    }
+
+    background-size: auto;
+    background-image: url(../images/icons/clock.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #F5F4FA;
+    margin-bottom: 30px;
+
+}
+
+.benefits-line__text-nodecenter {
+   display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+.benefits-line__text-nodemiddle::before {
+    content: "";
+    width: 450px;
+    height: 120px;
+    @media screen and (min-width: 768px) {
+        width: 354px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+    }
+
+    background-size: auto;
+    background-image: url(../images/icons/diagram.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #F5F4FA;
+    margin-bottom: 30px;
+}
+.benefits-line__text-nodemiddle {
+   display: inline-flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.benefits-line__text-nodefinish::before {
+    content: "";
+    width: 450px;
+    height: 120px;
+    @media screen and (min-width: 768px) {
+        width: 354px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+    }
+
+    background-size: auto;
+    background-image: url(../images/icons/astronaut.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #F5F4FA;
+    margin-bottom: 30px;
+}
+
+ .benefits-line__text-nodefinish {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+ }
+.benefits-line .text-node {
+    min-width: 270px;
+}
+
+// .benefits-line .text-node:not(:last-child) {
+//     margin-right: 30px;
+// }

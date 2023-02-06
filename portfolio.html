@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+       rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/portfolio.min.css">
+
+</head>
+   
+
+<body>
+<!-----------------------Шапка ------------------>
+<header class="section-header">
+    <div class="container">
+        <nav class="first-nav">
+            <!------------------------------Navigation----------------------------------->
+            <a href=" " class="logo">Web<span class="logo-header section-header__logo-header">Studio</span></a>
+            <button type="button" class="menu-button js-open-menu" aria-expanded="false" aria-controls="menu-container"
+                data-menu-button>
+                <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+                    <use class="icon-menu" href="./iconsubscribe.svg#icon-btnmenutel"></use>
+                    <use class="icon-cross" href="./iconsubscribe.svg#icon-btnmenutelclose"></use>
+                </svg>
+            </button>
+    
+            <div class="menu-container" id="menu-container" data-menu>
+                <div class="navigation">
+                    <ul class="site-nav list">
+                        <li class="site-nav__main-nav"><a href="./index.html"
+                                class="site-nav__link site-nav__link--bluelink">Студія</a></li>
+                        <li class="site-nav__main-nav"><a href="./portfolio.html"
+                                class="site-nav__link site-nav__link--bluelink active">Портфоліо</a></li>
+                        <li class="site-nav__main-nav"><a href="   "
+                                class="site-nav__link site-nav__link--bluelink">Контакти</a></li>
+                    </ul>
+                </div>
+                <div class="contacts">
+                    <ul class="info-about list">
+                        <li class="info-about__main-nav"><a href="mailto:info@devstudio.com"
+                                class="info-about__link info-about__link--bluelink">
+                                <svg class="info-about__info-header" width="16" height="12">
+                                    <use href="./images/sprite.svg#icon-envelope-ws"></use>
+                                </svg>
+                                info@devstudio.com</a>
+                        </li>
+    
+                        <li class="info-about__main-nav"><a href="tel:+380961111111"
+                                class="info-about__link info-about__link--telcolor">
+                                <svg class="info-about__info-icon" width="10" height="16">
+                                    <use href="./images/sprite.svg#icon-smartphone-ws"></use>
+                                </svg>
+                                +38 096 111 11 11</a>
+                        </li>
+    
+                    </ul>
+    
+                </div>
+    
+    
+                <ul class="menu-link list">
+                    <li class="menu-link__item">
+                        <a class="menu-link__socials">
+                            Instagram
+                        </a>
+                    </li>
+                    <li class="menu-link__item">
+                        <a class="menu-link__socials">
+                            Twitter
+                        </a>
+                    </li>
+                    <li class="menu-link__item">
+                        <a class="menu-link__socials">
+                            Facebook
+                        </a>
+                    </li>
+                    <li class="menu-link__item">
+                        <a class="menu-link__socials">
+                            linkedIn
+                        </a>
+                    </li>
+                </ul>
+    
+            </div>
+        </nav>
+    </div>
+
+
+</header> 
+<!------------Основний контент сторінки------------>
+<main>
+    <!---------------------Навігація 2 сторінки---------------------->
+    <section class="section-menu">
+        <div class="container-menu"> 
+        <h1 class="work-element__about-portfolio">Portfolio</h1>
+        <ul class="nav-second list">
+            <li class="nav-second__button-type first">
+                <button class="nav-second__menu nav-second__menu--blue" type="button">Усі</button>
+            </li>
+            <li class="nav-second__button-type second">
+                <button class="nav-second__menu nav-second__menu--blue" type="button">Веб-сайти</button>
+            </li>
+            <li class="nav-second__button-type third">
+                <button class="nav-second__menu nav-second__menu--blue" type="button">Додатки</button>
+            </li>
+            <li class="nav-second__button-type fourth">
+                <button class="nav-second__menu nav-second__menu--blue" type="button">Дизайн</button>
+            </li>
+            <li class="nav-second__button-type fifth">
+                <button class="nav-second__menu nav-second__menu--blue" type="button">Маркетинг</button>
+            </li>
+        </ul>
+        </div>
+    </section>
+<!-------------------------------Таблиця фотографій-------------------->
+ <section class="work-element">
+    <div class="container-navsecond">
+    <ul class="experience list">
+    <li class="experience__example">
+        <a class="experience__post-example experience__post-example--shadow">
+        <div class="team-thumb">
+        <picture>
+            <source media="(min-width: 1200px)"
+                srcset="./images/portfoliophoto/imgdesktopsq_1@1x.jpg 1x, ./images/portfoliophoto/imgdesktopsq_1@2x.jpg 2x">
+        
+            <source media="(min-width: 768px)"
+                srcset="./images/portfoliophoto/imgtabletsq_1@1x.jpg 1x, ./images/portfoliophoto/imgtabletsq_1@2x.jpg 2x">
+        
+            <source media="(max-width: 767px)" srcset="./images/portfoliophoto/imgphonesq_1@1x.jpg 1x, ./images/portfoliophoto/imgphonesq_1@2x.jpg 2x">
+            
+            <img class="experience__photo" src="./images/portfoliophoto/imgphonesq_1@1x.jpg" alt="Ноутбук" width="450" height="294" loading="lazy">
+        </picture>
+         <div class="secondoverlay secondoverlay--translate">
+          <p class="experience__icon-title">
+            Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
+            вичерпні відомості про компанію чи приватну особу.
+         </p>
+        </div>
+        </div>
+
+         <div class="exstra">
+            <h2 class="experience__title">Технокряк</h2>
+            <p class="experience__worktype">Веб-сайт</p>
+        </div>
+        </a>
+    </li>
+
+    <li class="experience__example">
+        <a class="experience__post-example experience__post-example--shadow">
+            <div class="team-thumb">
+                <picture>
+                    <source media="(min-width: 1200px)"
+                        srcset="./images/portfoliophoto/imgdesktop_2@1x.jpg 1x, ./images/portfoliophoto/imgdesktop_2@2x.jpg 2x">
+                
+                    <source media="(min-width: 768px)"
+                        srcset="./images/portfoliophoto/imgtablet_2@1x.jpg 1x, ./images/portfoliophoto/imgtablet_2@2x.jpg 2x">
+                
+                    <source media="(max-width: 767px)"
+                        srcset="./images/portfoliophoto/imgphone_2@1x.jpg 1x, ./images/portfoliophoto/imgphone_2@2x.jpg 2x">
+                
+                    <img class="experience__photo" src="./images/portfoliophoto/imgphone_2@1x.jpg" alt="хлопці грають у волейбол" width="450"
+                        height="294" loading="lazy">
+                </picture>
+                <div class="secondoverlay secondoverlay--translate">
+                    <p class="experience__icon-title">
+                        Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу
+                        отримати
+                        вичерпні відомості про компанію чи приватну особу.
+                    </p>
+                </div>
+            </div>
+
+           <div class="exstra">
+             <h2 class="experience__title">Постер New Orlean vs Golden Star</h2>
+            <p class="experience__worktype">Дизайн</p>
+        </div> 
+        </a>
+    </li>
+
+    <li class="experience__example">
+        <a class="experience__post-example experience__post-example--shadow">
+            <div class="team-thumb">
+                <picture>
+                    <source media="(min-width: 1200px)"
+                        srcset="./images/portfoliophoto/imgdesktop_3@1x.jpg 1x, ./images/portfoliophoto/imgdesktop_3@2x.jpg 2x">
+                
+                    <source media="(min-width: 768px)"
+                        srcset="./images/portfoliophoto/imgtablet_3@1x.jpg 1x, ./images/portfoliophoto/imgtablet_3@2x.jpg 2x">
+                
+                    <source media="(max-width: 767px)"
+                        srcset="./images/portfoliophoto/imgphone_3@1x.jpg 1x, ./images/portfoliophoto/imgphone_3@2x.jpg 2x">
+                    <img class="experience__photo" src="./images/portfoliophoto/imgphone_3@1x.jpg" alt="Марка рксторану" width="450"
+                        height="294" loading="lazy">
+                </picture>
+            
+            <div class="secondoverlay secondoverlay--translate">
+                <p class="experience__icon-title">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати
+                    вичерпні відомості про компанію чи приватну особу.
+                </p>
+            </div>
+            </div>
+
+           <div class="exstra">
+            <h2 class="experience__title">Ресторан Seafood</h2>
+            <p class="experience__worktype">Додаток</p>
+        </div> 
+        </a>
+    </li>
+
+    <li class="experience__example">
+        <a class="experience__post-example experience__post-example--shadow">
+            <div class="team-thumb">
+                <picture>
+                    <source media="(min-width: 1200px)"
+                        srcset="./images/portfoliophoto/imgdesktop_4@1x.jpg 1x, ./images/portfoliophoto/imgdesktop_4@2x.jpg 2x">
+                
+                    <source media="(min-width: 768px)"
+                        srcset="./images/portfoliophoto/imgtablet_4@1x.jpg 1x, ./images/portfoliophoto/imgtablet_4@2x.jpg 2x">
+                
+                    <source media="(max-width: 767px)"
+                        srcset="./images/portfoliophoto/imgphone_4@1x.jpg 1x, ./images/portfoliophoto/imgphone_4@2x.jpg 2x">
+                    <img class="experience__photo" src="./images/portfoliophoto/imgphone_4@1x.jpg" alt="Навушники" width="450" height="294" loading="lazy">
+                </picture>
+                <div class="secondoverlay secondoverlay--translate">
+                    <p class="experience__icon-title">
+                        Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу
+                        отримати
+                        вичерпні відомості про компанію чи приватну особу.
+                    </p>
+                </div>
+            </div>
+            
+          <div class="exstra">
+            <h2 class="experience__title">Проєкт Prime</h2>
+            <p class="experience__worktype">Маркетинг</p>
+        </div> 
+        </a>
+    </li>
+
+    <li class="experience__example">
+        <a class="experience__post-example experience__post-example--shadow">
+            <div class="team-thumb">
+                <picture>
+                    <source media="(min-width: 1200px)"
+                        srcset="./images/portfoliophoto/imgdesktop_5@1x.jpg 1x, ./images/portfoliophoto/imgdesktop_5@2x.jpg 2x">
+                
+                    <source media="(min-width: 768px)"
+                        srcset="./images/portfoliophoto/imgtablet_5@1x.jpg 1x, ./images/portfoliophoto/imgtablet_5@2x.jpg 2x">
+                
+                    <source media="(max-width: 767px)"
+                        srcset="./images/portfoliophoto/imgphone_5@1x.jpg 1x, ./images/portfoliophoto/imgphone_5@2x.jpg 2x">
+                    <img class="experience__photo" src="./images/portfoliophoto/imgphone_5@1x.jpg" alt="два бокси" width="450" height="294" loading="lazy">
+                </picture>
+                <div class="secondoverlay secondoverlay--translate">
+                    <p class="experience__icon-title">
+                        Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу
+                        отримати
+                        вичерпні відомості про компанію чи приватну особу.
+                    </p>
+                </div>
+            </div>
+            
+          <div class="exstra">
+            <h2 class="experience__title">Проєкт Boxes</h2>
+            <p class="experience__worktype">Додаток</p>
+        </div>
+        </a>
+    </li>
+
+    <li class="experience__example">
+        <a class="experience__post-example experience__post-example--shadow">
+            <div class="team-thumb">
+                <picture>
+                    <source media="(min-width: 1200px)"
+                        srcset="./images/portfoliophoto/imgdesktop_6@1x.jpg 1x, ./images/portfoliophoto/imgdesktop_6@2x.jpg 2x">
+                
+                    <source media="(min-width: 768px)"
+                        srcset="./images/portfoliophoto/imgtablet_6@1x.jpg 1x, ./images/portfoliophoto/imgtablet_6@2x.jpg 2x">
+                
+                    <source media="(max-width: 767px)"
+                        srcset="./images/portfoliophoto/imgphone_6@1x.jpg 1x, ./images/portfoliophoto/imgphone_6@2x.jpg 2x">
+                    <img class="experience__photo" src="./images/portfoliophoto/imgphone_6@1x.jpg" alt="Екран комп'ютера" width="450"
+                        height="294" loading="lazy">
+                </picture>
+                <div class="secondoverlay secondoverlay--translate">
+                    <p class="experience__icon-title">
+                        Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу
+                        отримати
+                        вичерпні відомості про компанію чи приватну особу.
+                    </p>
+                </div>
+            </div>
+           
+         <div class="exstra">
+            <h2 class="experience__title">Inspiration has no Borders</h2>
+            <p class="experience__worktype">Веб-сайт</p>
+        </div>
+        </a>
+    </li>
+
+    <li class="experience__example">
+        <a class="experience__post-example experience__post-example--shadow">
+            <div class="team-thumb">
+                <picture>
+                    <source media="(min-width: 1200px)"
+                        srcset="./images/portfoliophoto/imgdesktop_7@1x.jpg 1x, ./images/portfoliophoto/imgdesktop_7@2x.jpg 2x">
+                
+                    <source media="(min-width: 768px)"
+                        srcset="./images/portfoliophoto/imgtablet_7@1x.jpg 1x, ./images/portfoliophoto/imgtablet_7@2x.jpg 2x">
+                
+                    <source media="(max-width: 767px)"
+                        srcset="./images/portfoliophoto/imgphone_7@1x.jpg 1x, ./images/portfoliophoto/imgphone_7@2x.jpg 2x">
+                    <img class="experience__photo" src="./images/portfoliophoto/imgphone_7@1x.jpg" alt="Розгорнута книга" width="450"
+                        height="294" loading="lazy">
+                </picture>
+                <div class="secondoverlay secondoverlay--translate">
+                    <p class="experience__icon-title">
+                        Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу
+                        отримати
+                        вичерпні відомості про компанію чи приватну особу.
+                    </p>
+                </div>
+            </div>
+           
+          <div class="exstra"> 
+            <h2 class="experience__title">Видання Limited Edition</h2>
+            <p class="experience__worktype">Дизайн</p>
+         </div>
+        </a>
+    </li>
+
+    <li class="experience__example">
+        <a class="experience__post-example experience__post-example--shadow">
+            <div class="team-thumb">
+                <picture>
+                    <source media="(min-width: 1200px)"
+                        srcset="./images/portfoliophoto/imgdesktop_8@1x.jpg 1x, ./images/portfoliophoto/imgdesktop_8@2x.jpg 2x">
+                
+                    <source media="(min-width: 768px)"
+                        srcset="./images/portfoliophoto/imgtablet_8@1x.jpg 1x, ./images/portfoliophoto/imgtablet_8@2x.jpg 2x">
+                
+                    <source media="(max-width: 767px)"
+                        srcset="./images/portfoliophoto/imgphone_8@1x.jpg 1x, ./images/portfoliophoto/imgphone_8@2x.jpg 2x">
+                    <img class="experience__photo" src="./images/portfoliophoto/imgdesktop_8@1x.jpg" alt="Бірка з надписом проєкту" width="450"
+                        height="294" loading="lazy">
+                </picture>
+                <div class="secondoverlay secondoverlay--translate">
+                    <p class="experience__icon-title">
+                        Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу
+                        отримати
+                        вичерпні відомості про компанію чи приватну особу.
+                    </p>
+                </div>
+            </div>
+            
+         <div class="exstra">
+            <h2 class="experience__title">Проєкт LAB</h2>
+            <p class="experience__worktype">Маркетинг</p>
+        </div>
+        </a>
+    </li>
+
+    <li class="experience__example">
+        <a class="experience__post-example experience__post-example--shadow">
+            <div class="team-thumb">
+                <picture>
+                    <source media="(min-width: 1200px)"
+                        srcset="./images/portfoliophoto/imgdesktop_9@1x.jpg 1x, ./images/portfoliophoto/imgdesktop_9@2x.jpg 2x">
+                
+                    <source media="(min-width: 768px)"
+                        srcset="./images/portfoliophoto/imgtablet_9@1x.jpg 1x, ./images/portfoliophoto/imgtablet_9@2x.jpg 2x">
+                
+                    <source media="(max-width: 767px)"
+                        srcset="./images/portfoliophoto/imgphone_9@1x.jpg 1x, ./images/portfoliophoto/imgphone_9@2x.jpg 2x">
+                    <img class="experience__photo" src="./images/portfoliophoto/imgphone_9@1x.jpg" alt="Руки на клавіатурі ноутбука" width="450"
+                        height="294" loading="lazy">
+                </picture>
+                
+                <div class="secondoverlay secondoverlay--translate">
+                    <p class="experience__icon-title">
+                        Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу
+                        отримати
+                        вичерпні відомості про компанію чи приватну особу.
+                    </p>
+                </div>
+            </div>
+           
+         <div class="exstra">
+             <h2 class="experience__title">Growing Business</h2>
+            <p class="experience__worktype">Додаток</p>
+        </div>
+        </a>
+    </li>
+</ul>  
+        </div>
+
+    </section>
+
+</main>
+
+<!------------------------- Підвал--------------->
+<footer class="section-number">
+    <div class="container-footer">
+            <div class="container-baseline">
+                <div class="first-column">
+                    <a href=" " class="logo section-number__logo">Web<span
+                            class="logo-header section-number__logo-header">Studio</span></a>
+        
+                    <ul class="footer-info list">
+                        <li class="footer-info__contacts">
+                            <a href="https://goo.gl/maps/D6A7sHCN8AQHzFbF9"
+                                class="footer-info__element footer-info__element--white">м.
+                                Київ, пр-т Лесі Українки, 26</a>
+                        </li>
+                        <li class="footer-info__contacts">
+                            <a href="mailto:info@devstudio.com"
+                                class="footer-info__element footer-info__element--white">info@devstudio.com</a>
+                        </li>
+                        <li class="footer-info__contacts">
+                            <a href="tel:+380961111111" class="footer-info__element footer-info__element--white">+38 096 111 11
+                                11</a>
+                        </li>
+                    </ul>
+                </div>
+        <div class="jointoday">
+            <h2 class="section-number__jointoday-title">Приєднуйтесь</h2>
+            <ul class="socialsgroup list ">
+                <li class="socialsgroup__social-number">
+                    <a class="socialsgroup__connect-link socialsgroup__connect-link--blue" href="https://instagram.com"
+                        target="_blank" rel="noopener noreferrer" aria-label="Instagram icon">
+        
+                        <svg class="socialsgroup__socials-icon" width="20" height="20">
+                            <use href="./images/sprite.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+        
+                <li class="socialsgroup__social-number">
+                    <a class="socialsgroup__connect-link socialsgroup__connect-link--blue" href="https://twitter.com"
+                        target="_blank" rel="noopener noreferrer" aria-label="twitter icon">
+                        <svg class="socialsgroup__socials-icon" width="20" height="20">
+                            <use href="./images/sprite.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+                <li class="socialsgroup__social-number">
+                    <a class="socialsgroup__connect-link socialsgroup__connect-link--blue" href="https://facebook.com"
+                        target="_blank" rel="noopener noreferrer" aria-label="facebook icon">
+                        <svg class="socialsgroup__socials-icon" width="20" height="20">
+                            <use href="./images/sprite.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                <li class="socialsgroup__social-number">
+                    <a class="socialsgroup__connect-link socialsgroup__connect-link--blue" href="https://linkedIn.com" target="_blank"
+                        rel="noopener noreferrer" aria-label="linkedIn icon">
+                        <svg class="socialsgroup__socials-icon" width="20" height="20">
+                            <use href="./images/sprite.svg#icon-linkedin"></use>
+                        </svg>
+                    </a>
+                
+                </li>
+             </ul>
+         </div>
+                
+        </div>
+        <div class="follow">
+            <label class="section-number__subscribe" for="subscribe_email">Підпишіться на розсилку</label>
+            <div class="main-line">
+                <!-- <label class="section-number__subscribe" for="subscribe_email">Підпишіться на розсилку</label> -->
+                <input class="section-number__subscribe-info section-number__subscribe-info--blueborder" type="email"
+                    name="email" id="subscribe_email" placeholder="E-mail">
+                <button class="btn-subscribe" type="button">Підписатися
+                    <svg class="section-number__subscribe-icon" width="24" height="24">
+                        <use href="./images/sprite.svg#icon-iconsend"></use>
+                    </svg>
+                </button>
+            </div>
+        
+        </div>
+        
+        </div>
+
+</footer>
+<script src="./js/mobile-menu.js"></script>
+</body>
+
+</html>

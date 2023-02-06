@@ -1,0 +1,113 @@
+.follow {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-line {
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: baseline;
+    }
+
+
+}
+
+.section-number__subscribe {
+    margin-bottom: 20px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16/14);
+    text-transform: uppercase;
+    color: #FFFFFF;
+    // @media screen and (min-width: 1200px) {
+    //     text-align: start;
+    // }
+    @media screen and (min-width: 481px) {
+        text-align: center;
+    }
+        
+    @media screen and (min-width: 1200px) {
+        text-align: start;
+    
+    }
+}
+
+.section-number__subscribe-info {
+
+    @include transitive (outline, border);
+    @media screen and (max-width: 767px) {
+        display: inline-block;
+        width: 100%;
+        height: 50px;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
+        margin-right: 12px;
+    }
+    // display: inline-block;
+    // width: 450px;
+    // height: 50px;
+    margin-bottom: 20px;
+    padding: 15px 16px;
+    min-width: 354px;
+    min-height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: var(--footerbg-color);
+    // transition-property: outline, border;
+    // transition-duration: 250ms;
+    // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.main-line:focus-within>.section-number__subscribe-info--blueborder {
+    outline: transparent;
+    border: 1px solid var(--accent-color);
+    border-radius: 4px;
+
+}
+
+.btn-subscribe {
+    display: inline-block;
+    @media screen and (max-width: 480px) {
+    align-self: center;
+    }
+    @media screen and (min-width: 481px) {
+        align-self: center;
+    }
+    color: var(--button-color);
+    background-color: var(--accent-color);
+    font-weight: 700;
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    font-size: 16px;
+    line-height: calc(30/16);
+    text-align: start;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 28px;
+    padding-right: 28px;
+    border: 1px solid var(--accent-color);
+    border-radius: 2px;
+    cursor: pointer;
+
+}
+.btn-subscribe {
+    position: relative;
+}
+
+.section-number__subscribe-icon {
+    position: absolute;
+    position: absolute;
+    top: 55%;
+    left: 67%;
+    transform: translateY(-50%);
+    fill: var(--button-color);
+}

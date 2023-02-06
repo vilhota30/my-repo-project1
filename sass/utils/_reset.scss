@@ -1,0 +1,27 @@
+body {
+    background-color: #FFFFFF;
+    font-family: "Roboto", sans-serif;
+}
+body.modal-open {
+    overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    margin: 0px;
+}
+
+ul {
+    margin: 0px;
+    padding-left: 0px;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}

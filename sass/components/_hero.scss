@@ -1,0 +1,90 @@
+.container-hero {
+    @extend .container;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.overlay {
+    max-width: 1600px;
+    // height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 1px solid black;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)), url(../images/hero/img_sqphone@1x.jpg);
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(to right,
+                        rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)), url(../images/hero/img_sgphone@2x.jpg);
+        }
+     
+    @media screen and (min-width: 481px) {
+        background-image: linear-gradient(to right,
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)), url(../images/hero/img_sqtablet@1x.jpg);
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(to right,
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)), url(../images/hero/img_sqtablet@2x.jpg);
+        }
+    }
+    @media screen and (min-width: 769px) {
+        background-image: linear-gradient(to right,
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)), url(../images/hero/Img_sqdesktop@1x.jpg);
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(to right,
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)), url(../images/hero/Img_sqdesktop@2x.jpg);
+        }
+    }
+}
+.hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--herobg-color);
+    @media screen and (min-width: 768px) {
+        padding-top: 118px;
+        padding-bottom: 118px;
+
+    }
+    @media screen and (min-width: 1200px) {
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+}
+
+.hero__hero-title {
+    margin-bottom: 30px;
+    color: var(--button-color);
+    font-weight: 900;
+    font-size: 26px;
+    line-height: calc(42/26);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: var(--button-color);
+    
+    @media screen and (min-width: 1200px) {
+        font-weight: 900;
+        font-size: 44px;
+        line-height: calc(60/44);
+        letter-spacing: 0.06em;
+    }
+    
+}

@@ -1,0 +1,21 @@
+.buttonpage {
+    color: var(--button-color);
+    background-color: var(--accent-color);
+    font-weight: 700;
+    display: inline-block;
+    font-size: 16px;
+    line-height: calc(30/16);
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid var(--accent-color);
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.hero__buttonpage {
+    @extend .buttonpage;
+    min-width: 216px;
+    padding-left: 32px;
+    padding-right: 32px;
+}
