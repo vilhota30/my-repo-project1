@@ -42,6 +42,18 @@
             height: 80px;
         }
 }
+.header-logo {
+    display: flex;
+    margin-right: 14px;
+}
+
+.header-title {
+    display: flex;
+    align-items: flex-start;
+    margin-right: 32px;
+    font-size: 14px;
+    font-weight: 400;
+}
 
 
 .menu-button {
@@ -145,8 +157,16 @@
         align-items: center;
         margin-left: auto;
         margin-right: auto;
+        margin-left: 230px;
     }
     
+}
+.communication {
+    display: flex;
+    align-items: flex-start;
+    font-size: small;
+    font-weight: 400;
+    margin-right: 14px;
 }
 .site-nav {
     @media screen and (min-width: 768px) {
@@ -155,7 +175,7 @@
         }
     @media screen and (min-width: 1200px) {
         display: flex;
-        margin-right: 308px;
+        // margin-right: 308px;
     }
 }
 
@@ -315,6 +335,8 @@
     display: flex;
     align-items: baseline;
     flex-wrap: nowrap;
+    font-size: medium;
+    font-weight: 400;
     @media screen and (min-width: 768px) {
             &:not(:last-child) {
                 margin-bottom: 10px;
